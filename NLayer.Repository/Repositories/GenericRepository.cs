@@ -18,7 +18,7 @@ namespace NLayer.Repository.Repositories
         {
             _context = context;
             _dbSet = _context.Set<T>();
-        }
+        }//
         public async Task AddAsync(T entity)
         {
            await _dbSet.AddAsync(entity);
