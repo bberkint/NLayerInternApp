@@ -89,20 +89,11 @@ namespace NLayer.Repository.Migrations
                 columns: new[] { "Id", "CategoryId", "CreatedDate", "Name", "Price", "Stock", "UpdatedDate" },
                 values: new object[,]
                 {
-                    { 1, 1, new DateTime(2023, 8, 28, 13, 7, 39, 479, DateTimeKind.Local).AddTicks(9859), "Kalem 1", 100m, 20, null },
-                    { 2, 1, new DateTime(2023, 8, 28, 13, 7, 39, 479, DateTimeKind.Local).AddTicks(9871), "Kalem 2", 200m, 30, null },
-                    { 3, 1, new DateTime(2023, 8, 28, 13, 7, 39, 479, DateTimeKind.Local).AddTicks(9872), "Kalem 3", 600m, 80, null },
-                    { 4, 2, new DateTime(2023, 8, 28, 13, 7, 39, 479, DateTimeKind.Local).AddTicks(9873), "Kitap 1", 800m, 90, null },
-                    { 5, 2, new DateTime(2023, 8, 28, 13, 7, 39, 479, DateTimeKind.Local).AddTicks(9873), "Kitap 2", 3200m, 35, null }
-                });
-
-            migrationBuilder.InsertData(
-                table: "ProductFeatures",
-                columns: new[] { "Id", "Color", "Height", "ProductId", "Width" },
-                values: new object[,]
-                {
-                    { 1, "kırmızı", 100, 1, 200 },
-                    { 2, "mavi", 300, 1, 400 }
+                    { 1, 1, new DateTime(2023, 8, 28, 15, 30, 27, 949, DateTimeKind.Local).AddTicks(5144), "Kalem 1", 100m, 20, null },
+                    { 2, 1, new DateTime(2023, 8, 28, 15, 30, 27, 949, DateTimeKind.Local).AddTicks(5153), "Kalem 2", 200m, 30, null },
+                    { 3, 1, new DateTime(2023, 8, 28, 15, 30, 27, 949, DateTimeKind.Local).AddTicks(5154), "Kalem 3", 600m, 80, null },
+                    { 4, 2, new DateTime(2023, 8, 28, 15, 30, 27, 949, DateTimeKind.Local).AddTicks(5154), "Kitap 1", 800m, 90, null },
+                    { 5, 2, new DateTime(2023, 8, 28, 15, 30, 27, 949, DateTimeKind.Local).AddTicks(5155), "Kitap 2", 3200m, 35, null }
                 });
 
             migrationBuilder.CreateIndex(

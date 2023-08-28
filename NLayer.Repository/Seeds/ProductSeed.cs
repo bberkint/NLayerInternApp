@@ -13,7 +13,8 @@ namespace NLayer.Repository.Seeds
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {
-            builder.HasData(new Product { Id = 1,
+            builder.HasData(new Product { 
+                Id = 1,
                 CategoryId = 1,
                 Name = "Kalem 1",
                 Price = 100,

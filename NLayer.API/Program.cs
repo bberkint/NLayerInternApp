@@ -20,10 +20,16 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 
 
+//builder.Services.AddDbContext<AppDbContext>(options =>
 
-builder.Services.AddDbContext <AppDbContext>( X =>{
+//    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConneciton"))
 
-    X.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection"), option => {
+//);
+
+
+builder.Services.AddDbContext <AppDbContext>( x =>{
+
+    x.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection"), option => {
 
         option.MigrationsAssembly(Assembly.GetAssembly(typeof(AppDbContext)).GetName().Name);
     });
