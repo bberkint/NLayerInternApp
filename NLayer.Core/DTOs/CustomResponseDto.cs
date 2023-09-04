@@ -44,5 +44,16 @@ namespace NLayer.Core.DTOs
 
         }
 
+        public class Success : CustomResponseDto<CategoryWithProductsDto>
+        {
+            private int v;
+            private CategoryWithProductsDto categoryDto;
+
+            public Success(int v, CategoryWithProductsDto categoryDto)
+            {
+                this.v = v;
+                this.categoryDto = categoryDto;
+            }
+        }
     }
 }
