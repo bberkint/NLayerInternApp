@@ -22,7 +22,7 @@ namespace NLayer.Core.DTOs
             return new CustomResponseDto<T> { Data = data, StatusCode = statusCode };
         
         }
-
+        
         public static CustomResponseDto<T> Success(int statusCode)
         {
 
@@ -43,17 +43,6 @@ namespace NLayer.Core.DTOs
             return new CustomResponseDto<T> { StatusCode = statusCode, Errors = new List<string> { errors} };
 
         }
-
-        public class Success : CustomResponseDto<CategoryWithProductsDto>
-        {
-            private int v;
-            private CategoryWithProductsDto categoryDto;
-
-            public Success(int v, CategoryWithProductsDto categoryDto)
-            {
-                this.v = v;
-                this.categoryDto = categoryDto;
-            }
-        }
+        
     }
 }

@@ -28,7 +28,7 @@ namespace NLayer.Service.Services
             var category = await _categoryRepository.GetSingleCategoryByIdWithProductsAsync(categoryId);
             var categoryDto = _mapper.Map<CategoryWithProductsDto>(category);
 
-            return  CustomResponseDto<CategoryWithProductsDto>.Success(200, categoryDto);
+            return CustomResponseDto<CategoryWithProductsDto>.Success(200, categoryDto);
 
         }
     }
